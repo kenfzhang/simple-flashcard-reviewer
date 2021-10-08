@@ -6,4 +6,4 @@ Usage:
 $ python flashcard.py <CSV FILE>
 ``
 
-<img src="https://raw.githubusercontent.com/kenfzhang/simple-flashcard-reviewer/main/example.gif" alt="drawing" width="500"/>
+<img src="https://raw.githubusercontent.com/kenfzhang/simple-flashcard-reviewer/main/example.gif" alt="drawing" width="380"/>
