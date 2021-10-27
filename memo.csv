@@ -1,0 +1,45 @@
+What is the default limit on the number of S3 buckets in an AWS account?,100 buckets
+How large can an object in S3 be?,5 TB
+How many instances per AZ can you have using spread placement?,7 instances per AZ
+"By default, CloudTrail maintains a record of actions for how long?",90 days
+"Is there a limit to the number of IAM users in an AWS Account? If so, how many?","5,000 per account"
+How long must an object be stored in S3 Standard before it can transition via lifecycle policy to Standard-IA or One Zone-IA?,30 days
+What is the IP address for Instance Metadata?,http://169.254.169.254/latest/meta-data
+Do you need Enhanced Monitoring to view certain metrics in EC2 instances?,"No, you just need to install the CloudWatch agent on the instances. Enhanced Monitoring is a feature of RDS."
+Can you enable EBS encryption for individual volumes?,"No, EBS encryption is a feature that must be enabled for the entire region."
+"By default, how long does SQS keep messages?",4 days
+Does SQS delete processed messages by default?,"No, you need to configure your application to delete messages."
+Can you set priorities for individual SQS messages?,"No, SQS does not support this feature."
+Which Route 53 routing policy configuration should you use for Warm Standby?,Failover routing
+Which Route 53 routing policy should you use for active-active failover?,Weighted routing
+Is failover routing active-active or active-passive?,Active-passive
+"If your on-premises storage system is running out of space and you need to migrate data to clear up space, should you use Storage Gateway or DataSync?",DataSync
+What service can you use to automate the creation of EBS snapshots?,Amazon Data Lifecycle Manager
+What service can you use to configure a backup of an RDS database with a retention period of 90 days?,AWS Backup
+Does EBS support live configuration changes? i.e. can you modify volume attributes without service interruptions?,"Yes, you can update configuration while EBS is active."
+"What kind of EBS volume is best for infrequently accessed data and handling large, sequential I/O operations?",Cold HDD
+What is the default value of Auto Scaling Group cooldown period?,300 seconds
+What are the possible destinations for S3 event notifications?,"SQS, SNS, Lambda"
+What port does RDP use?,Port 3389
+Can you use the S3 API to access a Storage Gateway volume gateway?,"No, you cannot directly access the volume gateway using S3 APIs."
+What is the maximum retention period of an automated RDS backup?,35 days
+What services can gateway endpoints connect to?,"S3, DynamoDB"
+"By default, how long are data records kept in a Kinesis stream?",24 hours
+Can you configure a load balancer to run across multiple regions?,"No, ELB is designed to only run in one region."
+What range of data sizes is Snowball economical for?,10 TB to 10 PB
+How much data can a Snowmobile store?,100 PB
+Can you have an EBS volume with SSE enabled?,"No, SSE in the context of AWS refers to S3’s server-side encryption. EBS uses KMS for encryption."
+"When setting up a bastion host, should you use security groups or network ACLs?","You should use security groups because network ACLs apply to the entire subnet whereas security groups can be applied to individual instances, such as the bastion host itself."
+"By default, are data on EBS volumes preserved when their instance terminates?","No, you need to set the EBS volume’s DeleteOnTermination attribute to False."
+What feature should you use to improve data transfer to S3 regardless of user location?,Amazon S3 Transfer Acceleration
+What pieces of information do you need to use S3 Select on a file?,You need the bucket’s name and the object’s key.
+What feature of Storage Gateway should be used for migrations and disaster recovery?,Volume gateway (stored)
+How is data stored on AWS when using Storage Gateway volume gateway?,Data is stored in EBS snapshots.
+What feature of Storage Gateway should be used for data center extensions?,Volume gateway (cached)
+What is the main difference between Storage Gateway stored mode and cached mode?,"In cached mode, only the most frequently-accessed data is stored locally on-premises and the rest is stored in AWS. In stored mode, all the data is still stored on-premises but is being backed up to AWS."
+Which Directory Service mode should you use if you already have an on-premises directory?,AD Connector
+What is required to use Amazon Workspaces?,Amazon Workspaces requires a directory to function.
+What are the three modes of Directory Service?,"Simple AD mode, AWS Managed Microsoft AD, AD Connector"
+What kind of directory is Simple AD mode?,Simple AD is a Samba 4 directory.
+When should you use Directory Service in Microsoft AD mode?,You should use Microsoft AD mode if you have apps in AWS which require MS AD.
+What is the size limit for an item in a DynamoDB table?,400 KB
