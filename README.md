@@ -1,5 +1,5 @@
 # simple-flashcard-reviewer
-A simple Python 3 script for reviewing flashcards in your Terminal :)
+A simple Python 3 script for reviewing flashcards in your Terminal. Ideal if you prefer something simple and text-based.
 
 Usage:
 ``
